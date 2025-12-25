@@ -1,0 +1,94 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+:root {
+  --color-orange: #d87d4a;
+  --color-very-dark: #101010;
+  --color-light-gray: #f1f1f1;
+  --color-very-light-gray: #fafafa;
+  --color-light-orange: #fbaf85;
+  --color-white: #ffffff;
+  --color-black: #000000;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  color: var(--color-black);
+}
+
+.h1 {
+  font-size: 3.73rem;
+  text-transform: uppercase;
+  line-height: 1.03;
+  letter-spacing: 0.03em;
+}
+
+.h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: 0.375em;
+}
+
+.h3 {
+  font-family: 2.13rem;
+  line-height: 1.125;
+  text-transform: uppercase;
+  letter-spacing: 3.59em;
+}
+
+.h4 {
+  font-size: 1.86rem;
+  line-height: 1.35;
+  text-transform: uppercase;
+  letter-spacing: 1.35em;
+}
+
+.h5 {
+  font-size: 1.6rem;
+  line-height: 1.375;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.h6 {
+  font-size: 1.2rem;
+  line-height: 1.33;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.overline,
+.subtitle {
+  color: var(--color-orange);
+}
+
+.overline {
+  font-weight: 400;
+  font-size: 0.93rem;
+  text-transform: uppercase;
+  line-height: 1.36;
+  letter-spacing: 0.71em;
+}
+
+.subtitle {
+  font-weight: bold;
+  font-size: 0.86rem;
+  text-transform: uppercase;
+  line-height: 1.9;
+  letter-spacing: 0.07em;
+}
+
+.body {
+  font-weight: 500;
+  line-height: 1.66;
+}
