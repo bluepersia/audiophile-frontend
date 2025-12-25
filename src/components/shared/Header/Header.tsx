@@ -17,6 +17,9 @@ export default function Header() {
           onClick={() => uiContext?.setIsMobileMenuOpen((prev) => !prev)}
           className={styles.menuBtn}
           aria-label="Toggle mobile menu"
+          aria-expanded={uiContext?.isMobileMenuOpen}
+          aria-haspopup={true}
+          aria-controls="mobile-menu"
         >
           <img className={styles.menuIcon} alt="" src={mobileMenuBtn} />
         </button>
