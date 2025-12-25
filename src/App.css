@@ -9,3 +9,13 @@
 html {
   font-size: 15px;
 }
+
+:root {
+  --color-orange: #d87d4a;
+  --color-very-dark: #101010;
+  --color-light-gray: #f1f1f1;
+  --color-very-light-gray: #fafafa;
+  --color-light-orange: #fbaf85;
+  --color-white: #ffffff;
+  --color-black: #000000;
+}
