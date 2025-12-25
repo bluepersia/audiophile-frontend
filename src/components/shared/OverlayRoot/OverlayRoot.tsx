@@ -11,12 +11,24 @@ export default function OverlayRoot() {
   function onWindowResize() {
     setWindowWidth(window.innerWidth);
   }
+  function onBodyClick(e: MouseEvent) {
+    const target = e.target;
+
+    if (!(target instanceof Element)) return;
+
+    if (!target.closest("#mobile-menu")) {
+      uiContext?.setIsMobileMenuOpen(false);
+    }
+  }
   useEffect(() => {
     window.addEventListener("resize", onWindowResize);
+    document.body.addEventListener("click", onBodyClick);
 
     return () => {
       window.removeEventListener("resize", onWindowResize);
+      document.body.removeEventListener("click", onBodyClick);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const isMobileMenuOpen = uiContext?.isMobileMenuOpen && windowWidth < 1200;

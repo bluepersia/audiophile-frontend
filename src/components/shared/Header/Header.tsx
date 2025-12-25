@@ -5,16 +5,21 @@ import cartIcon from "../../../assets/shared/cartIcon.png";
 import Nav from "../Nav/Nav";
 import clsx from "clsx";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, type MouseEvent } from "react";
 import { UIContext } from "../../../contexts/UIProvider";
 export default function Header() {
   const uiContext = useContext(UIContext);
+
+  function handleMobileMenuClick(e: MouseEvent) {
+    e.stopPropagation();
+    uiContext?.setIsMobileMenuOpen((prev) => !prev);
+  }
 
   return (
     <header className={clsx(styles.header)}>
       <div className={clsx(styles.inner, "u-container")}>
         <button
-          onClick={() => uiContext?.setIsMobileMenuOpen((prev) => !prev)}
+          onClick={handleMobileMenuClick}
           className={styles.menuBtn}
           aria-label="Toggle mobile menu"
           aria-expanded={uiContext?.isMobileMenuOpen}
