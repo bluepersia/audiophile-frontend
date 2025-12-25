@@ -20,10 +20,12 @@ export default function Hero() {
 
   return (
     <section className={styles.hero} style={styleWithVars}>
-      <span className={clsx(styles.newProduct, "overline")}>New Product</span>
-      <h1 className={clsx(styles.title, "h3")}>{data?.title || ""}</h1>
-      <p className={clsx(styles.desc, "body")}>{data?.desc || ""}</p>
-      <button className={clsx(styles.button, "button")}>See Product</button>
+      <div className={clsx(styles.inner, "u-container")}>
+        <span className={clsx(styles.newProduct, "overline")}>New Product</span>
+        <h1 className={clsx(styles.title, "h3")}>{data?.title || ""}</h1>
+        <p className={clsx(styles.desc, "body")}>{data?.desc || ""}</p>
+        <button className={clsx(styles.button, "button")}>See Product</button>
+      </div>
     </section>
   );
 }
