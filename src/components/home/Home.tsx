@@ -1,5 +1,6 @@
 import CategoriesList from "../shared/CategoriesList/CategoriesList";
 import Hero from "./Hero/Hero";
+import styles from "./home.module.scss";
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
       <Hero />
       <section>
         <h2 className="sr-only">Categories</h2>
-        <CategoriesList />
+        <CategoriesList className={styles.categoriesList} />
       </section>
     </>
   );

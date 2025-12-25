@@ -32,3 +32,9 @@
   opacity: 100%;
   color: var(--color-orange);
 }
+
+@media (min-width: 1200px) {
+  .img {
+    width: 8.13rem;
+  }
+}

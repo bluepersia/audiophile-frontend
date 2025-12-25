@@ -3,6 +3,17 @@
 .categoriesList {
   @include App.container;
   @include App.reset-list;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4.53rem;
+}
+
+@media (min-width: 768px) {
+  .categoriesList {
+    flex-direction: row;
+    gap: 0.66rem;
+  }
 }
 .categoriesList li {
   flex-basis: 33%;
