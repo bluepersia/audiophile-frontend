@@ -1,0 +1,21 @@
+.header {
+  background-color: var(--color-very-dark);
+  padding: 2.13rem 0;
+  border-bottom: solid 1px var(--color-white-opacity-10);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuBtn,
+.cartBtn {
+  border: none;
+  background: none;
+}
+
+.nav {
+  display: none;
+}

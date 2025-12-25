@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import styles from "./nav.module.scss";
+import clsx from "clsx";
 
-export default function Nav() {
+type Props = {
+  className?: string;
+};
+export default function Nav({ className }: Props) {
   return (
-    <nav className={styles.nav}>
+    <nav className={clsx(styles.nav, className)}>
       <ul className={styles.list}>
         <li className={styles.item}>
           <Link to="." className={styles.link}>
