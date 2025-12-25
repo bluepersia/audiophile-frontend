@@ -17,6 +17,7 @@ html {
   --color-very-light-gray: #fafafa;
   --color-light-orange: #fbaf85;
   --color-white: #ffffff;
+  --color-white-opacity-10: rgba(255, 255, 255, 10%);
   --color-black: #000000;
 }
 
@@ -91,4 +92,17 @@ body {
 .body {
   font-weight: 500;
   line-height: 1.66;
+  margin: 0 auto;
+}
+
+.u-container {
+  width: 87.2%;
+  max-width: 74rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .u-container {
+    width: 89%;
+  }
 }

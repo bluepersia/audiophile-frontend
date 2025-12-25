@@ -1,7 +1,15 @@
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/shared/Layout/Layout";
 
 function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}></Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
