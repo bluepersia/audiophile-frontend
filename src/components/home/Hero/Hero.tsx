@@ -2,6 +2,7 @@ import clsx from "clsx";
 import styles from "./hero.module.scss";
 import getHeroData from "./services";
 import { useQuery } from "@tanstack/react-query";
+import { Link } from "react-router-dom";
 
 type CSSVariables = {
   [key: `--${string}`]: string | undefined;
@@ -24,7 +25,12 @@ export default function Hero() {
         <span className={clsx(styles.newProduct, "overline")}>New Product</span>
         <h1 className={clsx(styles.title, "h3")}>{data?.title || ""}</h1>
         <p className={clsx(styles.desc, "body")}>{data?.desc || ""}</p>
-        <button className={clsx(styles.button, "button")}>See Product</button>
+        <Link
+          to={`/products/${data?.produtId}`}
+          className={clsx(styles.button, "button")}
+        >
+          See Product
+        </Link>
       </div>
     </section>
   );
