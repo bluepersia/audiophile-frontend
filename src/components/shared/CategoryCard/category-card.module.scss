@@ -1,0 +1,34 @@
+.card {
+  text-align: center;
+  background-color: var(--color-light-gray);
+  padding: 1.46rem;
+}
+
+.img {
+  width: 6rem;
+  position: relative;
+  margin-top: -3.5rem;
+}
+
+.title {
+  color: var(--color-black);
+  margin-bottom: 1.13rem;
+}
+
+.shopLink {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.86rem;
+}
+.shopLink span {
+  color: var(--color-black);
+  opacity: 50%;
+  transition: color 300ms, opacity 300ms;
+}
+
+.shopLink:hover span {
+  opacity: 100%;
+  color: var(--color-orange);
+}

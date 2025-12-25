@@ -1,0 +1,16 @@
+.wrapper {
+  background-color: var(--color-white);
+}
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 4.53rem;
+  padding: 5.6rem 0 2.13rem;
+}
+
+@media (min-width: 768px) {
+  .mobileMenu {
+    flex-direction: row;
+    gap: 0.66rem;
+  }
+}

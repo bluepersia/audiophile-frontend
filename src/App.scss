@@ -114,6 +114,14 @@ body {
   background-color: var(--color-light-orange);
 }
 
+.categories-list {
+  @extend .u-container;
+  @extend .u-reset-list;
+}
+.categories-list li {
+  flex-basis: 33%;
+}
+
 @media (min-width: 768px) {
   .h3 {
     @include h1-styles;
@@ -124,6 +132,11 @@ body {
   width: 87.2%;
   max-width: 74rem;
   margin: 0 auto;
+}
+
+.u-reset-list {
+  list-style: none;
+  padding-left: 0;
 }
 
 @media (min-width: 768px) {
