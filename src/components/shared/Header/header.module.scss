@@ -34,3 +34,19 @@
     margin-left: auto;
   }
 }
+
+@media (min-width: 1200px) {
+  .inner {
+    justify-content: space-between;
+  }
+  .menuBtn {
+    display: none;
+  }
+  .cartBtn {
+    margin-left: 0;
+  }
+
+  .nav {
+    display: block;
+  }
+}

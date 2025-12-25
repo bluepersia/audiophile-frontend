@@ -10,22 +10,22 @@ export default function Nav({ className }: Props) {
     <nav className={clsx(styles.nav, className)}>
       <ul className={styles.list}>
         <li className={styles.item}>
-          <Link to="." className={styles.link}>
+          <Link to="." className={clsx(styles.link, "subtitle")}>
             Home
           </Link>
         </li>
         <li className={styles.item}>
-          <Link to="headphones" className={styles.link}>
+          <Link to="headphones" className={clsx(styles.link, "subtitle")}>
             Headphones
           </Link>
         </li>
         <li className={styles.item}>
-          <Link to="speakers" className={styles.link}>
+          <Link to="speakers" className={clsx(styles.link, "subtitle")}>
             Speakers
           </Link>
         </li>
         <li className={styles.item}>
-          <Link to="earphones" className={styles.link}>
+          <Link to="earphones" className={clsx(styles.link, "subtitle")}>
             Earphones
           </Link>
         </li>
