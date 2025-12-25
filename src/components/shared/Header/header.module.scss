@@ -14,8 +14,23 @@
 .cartBtn {
   border: none;
   background: none;
+  cursor: pointer;
 }
 
 .nav {
   display: none;
+}
+
+@media (min-width: 768px) {
+  .inner {
+    justify-content: start;
+  }
+
+  .menuBtn {
+    margin-right: 2.8rem;
+  }
+
+  .cartBtn {
+    margin-left: auto;
+  }
 }
