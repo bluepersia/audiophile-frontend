@@ -1,0 +1,28 @@
+.hero {
+  padding: 14.4rem 0 11.13rem;
+  background-image: var(--image-mobile);
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.hero > * {
+  max-width: 25.2rem;
+  margin: 0 auto;
+}
+
+.newProduct {
+  color: var(--color-white);
+  opacity: 49.65%;
+  margin-bottom: 1.06rem;
+}
+
+.title {
+  margin-bottom: 1.6rem;
+}
+
+.desc {
+  opacity: 75%;
+  margin-bottom: 1.86rem;
+}
