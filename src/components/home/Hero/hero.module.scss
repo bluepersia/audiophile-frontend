@@ -43,6 +43,9 @@
 
 @media (min-width: 768px) {
   .hero {
+    padding: 8.4rem 0 11.13rem;
+  }
+  .hero::before {
     background-image: var(--image-tablet);
   }
   .newProduct {
