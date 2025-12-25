@@ -1,0 +1,9 @@
+@use "../../../App.scss";
+
+.categoriesList {
+  @include App.container;
+  @include App.reset-list;
+}
+.categoriesList li {
+  flex-basis: 33%;
+}
