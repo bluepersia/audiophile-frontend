@@ -1,0 +1,40 @@
+.footer {
+  background-color: var(--color-very-dark);
+  padding: 3.46rem 2.53rem;
+  text-align: center;
+}
+
+.logo {
+  margin-bottom: 3.2rem;
+}
+.nav {
+  margin-bottom: 3.2rem;
+}
+
+.desc,
+.copyright {
+  color: var(--color-white);
+  opacity: 50%;
+  margin-bottom: 3.2rem;
+  display: block;
+}
+
+.socialList {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  justify-content: center;
+  gap: 1.06rem;
+}
+
+.socialItem {
+  cursor: pointer;
+}
+
+.socialIcon path {
+  transition: fill 300ms;
+}
+
+.socialIcon:hover path {
+  fill: var(--color-orange);
+}

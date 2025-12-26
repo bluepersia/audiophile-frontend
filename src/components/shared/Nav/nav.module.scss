@@ -2,7 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2.26rem;
+  flex-direction: column;
+  column-gap: 2.26rem;
+  row-gap: 1.06rem;
 }
 
 .link {
@@ -15,4 +17,10 @@
 .link:hover,
 .link:focus-visible {
   color: var(--color-orange);
+}
+
+@media (min-width: 768px) {
+  .list {
+    flex-direction: row;
+  }
 }
