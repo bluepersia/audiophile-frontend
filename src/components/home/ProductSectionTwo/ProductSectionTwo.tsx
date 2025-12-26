@@ -33,7 +33,7 @@ export default function ProductSectionTwo({
       <h2 className={clsx(styles.title, "h4")}>{data?.title}</h2>
       <Link
         to={`/products/${productId}`}
-        className={clsx(styles.button, "button", "button-transparent")}
+        className={clsx(styles.button, "button", "button--transparent")}
       >
         See Product
       </Link>

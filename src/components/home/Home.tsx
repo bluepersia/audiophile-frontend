@@ -6,6 +6,7 @@ import getHomeSections from "./services";
 import ProductSectionOne from "./ProductSectionOne/ProductSectionOne";
 import ProductSectionTwo from "./ProductSectionTwo/ProductSectionTwo";
 import clsx from "clsx";
+import ProductSectionThree from "./ProductSectionThree/ProductSectionThree";
 
 export default function Home() {
   const { data: sectionData } = useQuery({
@@ -26,6 +27,8 @@ export default function Home() {
             return <ProductSectionOne key={item.id} {...item} />;
           else if (item.component === "ProductSectionTwo")
             return <ProductSectionTwo key={item.id} {...item} />;
+          else if (item.component === "ProductSectionThree")
+            return <ProductSectionThree key={item.id} {...item} />;
         })}
       </div>
     </>
