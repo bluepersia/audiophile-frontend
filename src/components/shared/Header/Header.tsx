@@ -23,7 +23,7 @@ export default function Header() {
           className={styles.menuBtn}
           aria-label="Toggle mobile menu"
           aria-expanded={uiContext?.isMobileMenuOpen}
-          aria-haspopup={true}
+          aria-haspopup="dialog"
           aria-controls="mobile-menu"
         >
           <img className={styles.menuIcon} alt="" src={mobileMenuBtn} />
