@@ -50,3 +50,29 @@
 .socialIcon:hover path {
   fill: var(--color-orange);
 }
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 4rem 0 3.06rem;
+    text-align: left;
+  }
+
+  .footer::before {
+    left: 5%;
+    transform: translateX(0);
+  }
+
+  .logo,
+  .nav {
+    margin-bottom: 2.14rem;
+  }
+
+  .copyright {
+    margin-bottom: 0;
+  }
+  .btm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
