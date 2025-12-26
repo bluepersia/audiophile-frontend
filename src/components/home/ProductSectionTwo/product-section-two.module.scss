@@ -9,3 +9,10 @@
 .title {
   margin-bottom: 2.13rem;
 }
+
+@media (min-width: 768px) {
+  .productSectionTwo {
+    padding: 6.73rem 4.13rem;
+    background-image: var(--image-tablet);
+  }
+}
