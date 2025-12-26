@@ -1,0 +1,25 @@
+.productSectionThree {
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.img {
+  width: 100%;
+}
+
+.img img {
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.content {
+  background-color: var(--color-light-gray);
+  padding: 2.7rem 1.6rem;
+}
+
+.title {
+  margin-bottom: 2.1rem;
+}

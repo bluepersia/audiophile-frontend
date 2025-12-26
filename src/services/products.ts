@@ -14,6 +14,11 @@ const productsData = [
     title: "ZX7 Speaker",
     isNew: false,
   },
+  {
+    id: 3,
+    title: "YX1 Earphones",
+    isNew: true,
+  },
 ];
 
 export async function getProductById(id: number) {

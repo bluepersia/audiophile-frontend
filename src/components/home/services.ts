@@ -17,6 +17,15 @@ const homeSections = [
     imgDesktop: "/assets/home/desktop/image-speaker-zx7.jpg",
     component: "ProductSectionTwo",
   },
+  {
+    id: 3,
+    productId: 3,
+    desc: "",
+    imgMobile: "/assets/home/mobile/image-earphones-yx1.jpg",
+    imgTablet: "/assets/home/tablet/image-earphones-yx1.jpg",
+    imgDesktop: "/assets/home/desktop/image-earphones-yx1.jpg",
+    component: "ProductSectionThree",
+  },
 ];
 
 export default async function getHomeSections() {
