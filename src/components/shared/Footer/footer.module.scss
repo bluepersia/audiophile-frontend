@@ -2,6 +2,18 @@
   background-color: var(--color-very-dark);
   padding: 3.46rem 2.53rem;
   text-align: center;
+  position: relative;
+}
+
+.footer::before {
+  content: "";
+  width: 101px;
+  height: 4px;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  background-color: var(--color-orange);
+  transform: translateX(-50%);
 }
 
 .logo {
