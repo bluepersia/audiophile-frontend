@@ -1,5 +1,4 @@
 .productSectionThree {
-  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
@@ -20,6 +19,7 @@
 .content {
   background-color: var(--color-light-gray);
   padding: 2.7rem 1.6rem;
+  border-radius: 0.5rem;
 }
 
 .title {
@@ -45,5 +45,15 @@
     align-items: start;
     padding-left: 2.73rem;
     padding-right: 2.73rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .productSectionThree {
+    gap: 2rem;
+  }
+
+  .content {
+    padding: 0 6.33rem;
   }
 }
