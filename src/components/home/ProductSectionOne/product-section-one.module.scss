@@ -10,6 +10,12 @@
   border-radius: 0.5rem;
 }
 
+.productSectionOne > * {
+  max-width: 23.2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .img img {
   display: block;
   margin: 0 auto;
@@ -24,4 +30,19 @@
 
 .desc {
   margin-bottom: 1.6rem;
+}
+
+@media (min-width: 768px) {
+  .productSectionOne {
+    padding: 3.46rem 0rem 4.26rem;
+    background-position: center calc(0% - 12rem);
+  }
+  .img img {
+    width: 28.5%;
+    max-width: 27.3rem;
+  }
+
+  .desc {
+    margin-bottom: 2.6rem;
+  }
 }
