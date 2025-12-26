@@ -16,3 +16,9 @@
     background-image: var(--image-tablet);
   }
 }
+@media (min-width: 1200pxpx) {
+  .productSectionTwo {
+    padding: 6.73rem 6.3rem;
+    background-image: var(--image-desktop);
+  }
+}
