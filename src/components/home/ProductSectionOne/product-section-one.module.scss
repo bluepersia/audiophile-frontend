@@ -16,11 +16,17 @@
   margin-right: auto;
 }
 
+.img {
+  margin: 0 auto;
+  display: block;
+  width: 52%;
+  max-width: 13.13rem;
+}
+
 .img img {
   display: block;
   margin: 0 auto;
-  width: 52%;
-  max-width: 13.13rem;
+  width: 100%;
   margin-bottom: 4.26rem;
 }
 
@@ -37,7 +43,7 @@
     padding: 3.46rem 0rem 4.26rem;
     background-position: center calc(0% - 12rem);
   }
-  .img img {
+  .img {
     width: 28.5%;
     max-width: 27.3rem;
   }
@@ -58,9 +64,11 @@
     column-gap: 9.2rem;
   }
 
+  .img {
+    width: 54%;
+  }
+
   .img img {
-    flex-basis: 54%;
-    width: unset;
     align-self: end;
     margin-bottom: -2rem;
   }
