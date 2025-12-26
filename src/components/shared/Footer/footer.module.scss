@@ -103,3 +103,46 @@
     justify-content: end;
   }
 }
+
+@media (min-width: 1200px) {
+  .footer {
+    padding: 5rem 0 3.2rem;
+  }
+
+  .footer::before {
+    left: 6%;
+  }
+
+  .logo {
+    grid-column: 1 / 2;
+  }
+
+  .nav {
+    grid-column: 2 / -1;
+    grid-row: 1 /2;
+  }
+
+  .nav ul {
+    justify-content: end;
+  }
+
+  .logo,
+  .nav {
+    margin-bottom: 2.4rem;
+  }
+
+  .desc {
+    margin-bottom: 3.73rem;
+  }
+
+  .desc,
+  .copyright {
+    grid-column: 1 / 2;
+  }
+
+  .socialList {
+    grid-row: 2 / -1;
+    align-items: center;
+    margin-bottom: 0;
+  }
+}
