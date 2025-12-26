@@ -11,24 +11,22 @@ export default function OverlayRoot() {
   function onWindowResize() {
     setWindowWidth(window.innerWidth);
   }
-  function onBodyClick(e: MouseEvent) {
-    const target = e.target;
-
-    if (!(target instanceof Element)) return;
-
-    if (!target.closest("#mobile-menu")) {
+  function onKeyDown(e: KeyboardEvent) {
+    if (e.key === "Escape") {
       uiContext?.setIsMobileMenuOpen(false);
     }
   }
+
   useEffect(() => {
     window.addEventListener("resize", onWindowResize);
-    document.body.addEventListener("click", onBodyClick);
+
+    document.addEventListener("keydown", onKeyDown);
 
     return () => {
       window.removeEventListener("resize", onWindowResize);
-      document.body.removeEventListener("click", onBodyClick);
+      document.removeEventListener("keydown", onKeyDown);
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const isMobileMenuOpen = uiContext?.isMobileMenuOpen && windowWidth < 1200;
@@ -36,7 +34,10 @@ export default function OverlayRoot() {
 
   return (
     isOpen && (
-      <div className={styles.overlayRoot}>
+      <div
+        className={styles.overlayRoot}
+        onClick={() => uiContext.setIsMobileMenuOpen(false)}
+      >
         {isMobileMenuOpen && <MobileMenu />}
       </div>
     )
