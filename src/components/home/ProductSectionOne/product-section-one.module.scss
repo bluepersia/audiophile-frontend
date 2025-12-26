@@ -1,0 +1,80 @@
+.productSectionOne {
+  background-color: var(--color-orange);
+  padding: 3.6rem 1.6rem 3.6rem;
+  background-image: url(../../../assets/home/desktop/pattern-circles.svg);
+  background-size: cover;
+  background-position: center calc(0% - 8rem);
+  background-repeat: no-repeat;
+  color: var(--color-white);
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.content {
+  max-width: 23.2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img {
+  margin: 0 auto;
+  display: block;
+  width: 52%;
+  max-width: 13.13rem;
+}
+
+.img img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 4.26rem;
+}
+
+.title {
+  margin-bottom: 1.6rem;
+}
+
+.desc {
+  margin-bottom: 1.6rem;
+}
+
+@media (min-width: 768px) {
+  .productSectionOne {
+    padding: 3.46rem 0rem 4.26rem;
+    background-position: center calc(0% - 12rem);
+  }
+  .img {
+    width: 28.5%;
+    max-width: 27.3rem;
+  }
+
+  .desc {
+    margin-bottom: 2.6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .productSectionOne {
+    display: flex;
+    align-items: end;
+    text-align: left;
+    padding: 6.4rem 7rem 0;
+    overflow-y: hidden;
+    background-position: calc(50% - 17rem) calc(0% - 12rem);
+    column-gap: 9.2rem;
+  }
+
+  .img {
+    width: 54%;
+  }
+
+  .img img {
+    align-self: end;
+    margin-bottom: -2rem;
+  }
+
+  .content {
+    flex-basis: 45.9%;
+    padding-bottom: 8.2rem;
+  }
+}

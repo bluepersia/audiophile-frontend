@@ -34,7 +34,7 @@ export default function Hero() {
             New Product
           </span>
         )}
-        <h1 className={clsx(styles.title, "h3")}>{productData?.title || ""}</h1>
+        <h1 className={clsx(styles.title, "h1")}>{productData?.title || ""}</h1>
         <p className={clsx(styles.desc, "body")}>{data?.desc || ""}</p>
         <Link
           to={`/products/${data?.productId}`}
