@@ -7,6 +7,7 @@ import ProductSectionOne from "./ProductSectionOne/ProductSectionOne";
 import ProductSectionTwo from "./ProductSectionTwo/ProductSectionTwo";
 import clsx from "clsx";
 import ProductSectionThree from "./ProductSectionThree/ProductSectionThree";
+import About from "../shared/About/About";
 
 export default function Home() {
   const { data: sectionData } = useQuery({
@@ -31,6 +32,7 @@ export default function Home() {
             return <ProductSectionThree key={item.id} {...item} />;
         })}
       </div>
+      <About />
     </>
   );
 }
