@@ -107,6 +107,8 @@ body {
   padding: 1rem 2.13rem;
   cursor: pointer;
   transition: background-color 300ms;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .button:hover,
@@ -120,14 +122,39 @@ body {
   }
 }
 
-.u-container {
+@mixin container {
   width: 87.2%;
   max-width: 74rem;
   margin: 0 auto;
 }
 
+@mixin reset-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.u-container {
+  @include container();
+}
+
+.u-reset-list {
+  @include reset-list();
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 @media (min-width: 768px) {
-  .u-container {
+  @mixin container {
     width: 89%;
   }
 }
