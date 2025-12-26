@@ -29,14 +29,16 @@ export default function ProductSectionOne({
         <source srcSet={imgTablet} media="(min-width: 768px)" />
         <img src={imgMobile} alt={data?.title} />
       </picture>
-      <h2 className={clsx(styles.title, "h1")}>{data?.title}</h2>
-      <p className={clsx(styles.desc, "body")}>{desc}</p>
-      <Link
-        to={`/products/${productId}`}
-        className={clsx(styles.button, "button", "button--black")}
-      >
-        See Product
-      </Link>
+      <div className={styles.content}>
+        <h2 className={clsx(styles.title, "h1")}>{data?.title}</h2>
+        <p className={clsx(styles.desc, "body")}>{desc}</p>
+        <Link
+          to={`/products/${productId}`}
+          className={clsx(styles.button, "button", "button--black")}
+        >
+          See Product
+        </Link>
+      </div>
     </section>
   );
 }

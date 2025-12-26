@@ -10,7 +10,7 @@
   border-radius: 0.5rem;
 }
 
-.productSectionOne > * {
+.content {
   max-width: 23.2rem;
   margin-left: auto;
   margin-right: auto;
@@ -44,5 +44,29 @@
 
   .desc {
     margin-bottom: 2.6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .productSectionOne {
+    display: flex;
+    align-items: end;
+    text-align: left;
+    padding: 6.4rem 7rem 0;
+    overflow-y: hidden;
+    background-position: calc(50% - 17rem) calc(0% - 12rem);
+    column-gap: 9.2rem;
+  }
+
+  .img img {
+    flex-basis: 54%;
+    width: unset;
+    align-self: end;
+    margin-bottom: -2rem;
+  }
+
+  .content {
+    width: 45.9%;
+    padding-bottom: 8.2rem;
   }
 }
