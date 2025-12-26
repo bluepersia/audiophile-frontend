@@ -3,6 +3,7 @@ import Header from "../Header/Header";
 import OverlayRoot from "../OverlayRoot/OverlayRoot";
 import UIProvider from "../../../contexts/UIProvider";
 import styles from "./layout.module.scss";
+import Footer from "../Footer/Footer";
 
 export default function Layout() {
   return (
@@ -12,6 +13,7 @@ export default function Layout() {
         <Outlet />
         <OverlayRoot />
       </main>
+      <Footer />
     </UIProvider>
   );
 }
