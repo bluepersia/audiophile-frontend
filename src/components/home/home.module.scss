@@ -3,15 +3,29 @@
   padding-bottom: 8rem;
 }
 
+.productSections {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
 @media (min-width: 768px) {
   .categoriesList {
     padding-top: 9.8rem;
     padding-bottom: 6.4rem;
+  }
+
+  .productSections {
+    gap: 2.13rem;
   }
 }
 @media (min-width: 1200px) {
   .categoriesList {
     padding-top: 13.3rem;
     padding-bottom: 11.2rem;
+  }
+
+  .productSections {
+    gap: 3rem;
   }
 }

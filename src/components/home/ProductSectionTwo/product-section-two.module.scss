@@ -1,0 +1,24 @@
+.productSectionTwo {
+  background-image: var(--image-mobile);
+  padding: 6.73rem 1.6rem;
+  color: var(--color-black);
+  background-size: cover;
+  background-position: center center;
+}
+
+.title {
+  margin-bottom: 2.13rem;
+}
+
+@media (min-width: 768px) {
+  .productSectionTwo {
+    padding: 6.73rem 4.13rem;
+    background-image: var(--image-tablet);
+  }
+}
+@media (min-width: 1200pxpx) {
+  .productSectionTwo {
+    padding: 6.73rem 6.3rem;
+    background-image: var(--image-desktop);
+  }
+}

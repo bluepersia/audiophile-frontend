@@ -4,12 +4,7 @@ import getHeroData from "./services";
 import { useQuery } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
 import { getProductById } from "../../../services/products";
-
-type CSSVariables = {
-  [key: `--${string}`]: string | undefined;
-};
-
-type StyleWithVars = React.CSSProperties & CSSVariables;
+import type { StyleWithVars } from "../../../utils/styleVars";
 
 export default function Hero() {
   const { data } = useQuery({ queryKey: ["heroData"], queryFn: getHeroData });
