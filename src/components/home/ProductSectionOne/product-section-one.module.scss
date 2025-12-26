@@ -1,0 +1,27 @@
+.productSectionOne {
+  background-color: var(--color-orange);
+  padding: 3.6rem 1.6rem 3.6rem;
+  background-image: url(../../../assets/home/desktop/pattern-circles.svg);
+  background-size: cover;
+  background-position: center calc(0% - 8rem);
+  background-repeat: no-repeat;
+  color: var(--color-white);
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.img img {
+  display: block;
+  margin: 0 auto;
+  width: 52%;
+  max-width: 13.13rem;
+  margin-bottom: 4.26rem;
+}
+
+.title {
+  margin-bottom: 1.6rem;
+}
+
+.desc {
+  margin-bottom: 1.6rem;
+}

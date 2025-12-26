@@ -19,6 +19,7 @@ html {
   --color-white: #ffffff;
   --color-white-opacity-10: rgba(255, 255, 255, 10%);
   --color-black: #000000;
+  --color-dark-gray: #4c4c4c;
 }
 
 body {
@@ -26,14 +27,11 @@ body {
   color: var(--color-black);
 }
 
-@mixin h1-styles {
-  font-size: 3.73rem;
+.h1 {
+  font-size: 2.4rem;
   text-transform: uppercase;
   line-height: 1.03;
   letter-spacing: 0.03em;
-}
-.h1 {
-  @include h1-styles;
 }
 
 .h2 {
@@ -116,9 +114,18 @@ body {
   background-color: var(--color-light-orange);
 }
 
+.button--black {
+  background-color: var(--color-black);
+}
+
+.button--black:hover,
+.button--black:focus-visible {
+  background-color: var(--color-dark-gray);
+}
+
 @media (min-width: 768px) {
-  .h3 {
-    @include h1-styles;
+  .h1 {
+    font-size: 3.73rem;
   }
 }
 
